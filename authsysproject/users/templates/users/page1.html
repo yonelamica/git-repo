@@ -1,0 +1,73 @@
+
+{% load static %}
+{% block content %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+    <title>My Website</title>
+    <link href="{% static 'users/css/main.css' %}" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/636320fbfc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!----about---->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="{% static 'users/images/abt.jpeg' %}" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-tittle">About Us</h1>
+                    <p>Founded by three innovative colleagues in 2022<span><br>We value quality of our products, and we have healthy relationships with our clients</span><br /></p>
+
+                    <div class="tab-tittles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Equality</p>
+                        <p class="tab-links" onclick="opentab('experience')">Honest & 
+                            Transperancy</p>
+                        <p class="tab-links" onclick="opentab('education')">Integrity</p>
+                    </div>
+                    <!-------------------Skills------------------------->
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>We provide world-class services,</span><br />and it's all thanks to the incredible</li>
+                            <li><span>relationships we've formed with our clients.</span><br /> Unlike our competitors,</li>
+                            <li><span>we're interested in developing a personal</span><br />connection with each and every one </li>
+                            <li><span>of our customers, by providing quality service  </span><br />and being available to you 24/7.</li>              
+                        </ul>
+                    </div>
+
+                    <!-------------------Experience------------------------->
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>We keep the future in mind</span><br />in whatever we do.</li>
+                            <li><span>We always ensure regular</span><br />reporting to our partners,</li>
+                            <li><span>so that we can all be </span><br />on the same page</li>
+                            <li><span>In all the work we do,</span><br />we do bring the best value,</li>
+                            <li><span>best performance</span><br />and strict descipline.</li>
+                        </ul>
+                    </div>
+
+                    <!-------------------Education------------------------->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>We always value honesty, </span><br />To our clients which</li>
+                            <li><span>makes us more reliable</span><br />to our clients.</li>
+                            <li><span>We always make sure </span><br />that you get what you deserve</li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+            <a href="{% url 'webpage2'%}" class="btn">Go to page3</a>
+        </div>   
+    </div>
+
+    <script src="{% static 'users/js/script.js' %}"></script>
+{% endblock content %}
+</body>
+</html>
