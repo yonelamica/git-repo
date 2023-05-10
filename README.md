@@ -13,15 +13,18 @@ Clone the repository to your local machine
 bash
 Copy code
 git clone https://github.com/yonelamica/git-repo.git
-Install the dependencies
+
+Install the dependencies in the requirements.txt
 Copy code
-npm install
+pip install django 
+pip install python
+pip install django-crispy_forms 
+pip install bootstrap4
+pip install crispy-bootstrap4
+
 Usage
-Start the development server
-sql
-Copy code
-npm start
-Open your web browser and navigate to http://localhost:3000
+python manage.py runserver
+Open your web browser and navigate to (http://127.0.0.1:8000/)
 
 You should see the example project running in your browser. Use the navigation links to explore the project.
 
